@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stuff</title>
+    <link rel="stylesheet" type="text/css" href="site.css" />
+  </head>
+  <body>
+    <form name="mainForm" onsubmit="return false">
+      <!-- Type of user field -->
+      <fieldset id="custTypeInfo">
+        <legend>Welcome to Gabriel's Useless Website</legend>
+        <button onclick="enableNewUser()">Click for New User</button>
+        <button onclick="enableExistingUser()">Click for Existing User</button>
+      </fieldset>
+
+      <!-- New user field -->
+      <fieldset id="custInfo">
+        <legend>New User</legend>
+        <div>
+          <label for="custUser">UserName:</label>
+          <input name="custUser" id="custUser" />
+
+          <label for="custPass">Password:</label>
+          <input name="custPass" id="custPass" />
+        </div>
+        <input>
+          <label for="city">City:</label>
+          <input name="city" id="city" />
+
+          <label for="state">State (abbr.):</label>
+          <input name="state" id="state" />
+
+          <input type="submit" value="Submit" onclick="newUserFormSubmit()" />
+        </div>
+      </fieldset>
+
+      <!-- Existing user field -->
+      <fieldset id="existingCustInfo">
+        <legend>Existing User</legend>
+        <label for="existingCustUser">UserName:</label>
+        <input name="existingCustUser" id="existingCustUser" />
+        <label for="custPass">Password:</label>
+        <input name="custPass" id="custPass" />
+
+        <input type="submit" value="Submit" onclick="existingUserFormSubmit()" />
+      </fieldset>
+    </form>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
